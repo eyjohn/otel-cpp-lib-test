@@ -1,3 +1,3 @@
-# otel-cpp-test
+# otel-cpp-lib-test
 
-A repo to test OpenTelemetry-cpp API.
+A repo to test OpenTelemetry-cpp API in a library.

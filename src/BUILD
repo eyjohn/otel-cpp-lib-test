@@ -1,25 +1,12 @@
 cc_library(
-    name = "example_library",
+    name = "hello_library",
     srcs = [
-        "example.cpp",
+        "hello.cpp",
     ],
     hdrs = [
-        "example.h",
+        "hello.h",
     ],
     deps = [
         "@opentelemetry_cpp//api",
-    ],
-)
-
-cc_binary(
-    name = "example_main",
-    srcs = [
-        "main.cpp",
-    ],
-    deps = [
-        ":example_library",
-        "@opentelemetry_cpp//api",
-        "@opentelemetry_cpp//sdk/src/trace",
-        "@opentelemetry_cpp//exporters/ostream:ostream_span_exporter",
     ],
 )
